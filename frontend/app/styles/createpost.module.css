@@ -1,0 +1,218 @@
+
+.globForm{
+    margin: auto;
+    z-index: 4;
+    width: 60%;
+    padding: 20px;
+    margin-top: 100px;
+    display: block;
+}
+  
+
+.headForm p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+  
+.closebtn{
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.divForm{
+    /* background-color: rgba(243, 245, 247, 0.15); */
+    background-color: #2D3748;
+    border-radius: 15px;
+    height: max-content;
+    margin-top: 30px;
+    padding: 30px;
+    border: solid 1px #ffffff43;
+}
+
+#formPost{
+    width: 100%;
+}
+
+.userPhoto{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.galerie{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: -60px;
+    margin-top: 10px;
+}
+
+.imageInput{
+    display: none;
+}
+
+.postForm{
+    display: flex;
+}
+
+.textarea{
+    margin-top: 30px;
+    margin-left: -40px;
+    border: none;
+    background: none;
+    resize: none;
+    width: 100%;
+}
+
+.textarea:focus{
+    outline: none;
+}
+
+.postVisibility{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.select{
+    margin-left: -80px;
+}
+
+#selectOption{
+    background: #2D3748;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    margin-left: -25px;
+    accent-color: #2D3748;
+}
+
+/* #selectOption option{
+    background: none;
+    appearance: none;
+    border: none;
+} */
+
+#publier{
+    float: right;
+}
+
+#publier:hover{
+    text-decoration: underline;
+    color: darkgray;
+}
+
+#form-post{
+    width: 100%;
+}
+
+.userName{
+    margin-left: 10px;
+}
+
+.divChoice{
+    display: flex;
+    height: 200px;
+    /* height: 110px; */
+    overflow: auto;
+}
+
+.ulChoice{
+    /* padding-top: 30px; */
+}
+
+.ulChoice li{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.userChoice{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.checkbox{
+    cursor: pointer;
+    margin-left: 20px;
+    accent-color: green;
+}
+
+.ulChoice label{
+    display: flex;
+    align-items: center;;
+}
+
+.ulChoice span{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.imagePost{
+    /* width: 300px;
+    height: 250px;
+    margin: auto; */
+}
+
+.imageContainer{
+    margin-top: 10px;
+    display: flex;
+}
+
+.imageContainer img{
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 250px;
+    height: 250px;
+}
+
+.removeIcon{
+    float: right;
+    font-size: 1.6rem;
+    margin-left: -9px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+@media  (max-width: 500px) {
+    .globForm{
+        width: 100%;
+        padding: 0px;
+        top: 0;
+        margin-bottom: 60px;
+        margin-top: -10px;
+
+    }
+
+    .imageContainer{
+        margin: auto;
+    }
+
+    .imageContainer img{
+        width: 130px;
+        height: 130px;
+    }
+}
+@media  (min-width: 501px) and (max-width: 1000px) {
+    .globForm{
+        width: 65%;
+        padding: 0px;
+        margin-bottom: 60px;
+        margin-top: -10px;
+    }
+
+    .imageContainer{
+        margin: auto;
+    }
+
+    .imageContainer img{
+        width: 130px;
+        height: 130px;
+    }
+}

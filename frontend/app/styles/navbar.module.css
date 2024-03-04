@@ -1,0 +1,81 @@
+
+.navBarDiv{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    background: rgb(16,16,16);
+    height: 50px;
+    z-index: 10;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.app{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-around;
+    list-style: none;
+    align-self: center;
+    width: 60%;
+    padding-top: 5px;
+    z-index: 3;
+}
+
+.container img{
+    width: 25px;
+    height: 25px;
+}
+
+.logout img{
+    margin-right: 10px;
+    float: right;
+}
+
+@media (max-width: 480px) {
+    .navBarDiv{
+        bottom: 0;
+        position: fixed;
+        padding-top: 10px;
+    }
+    .logout{
+        top: 0;
+        right: 0;
+        position: fixed;
+        margin-right: 0px;
+        background: #000;
+        height: 25px;
+        z-index: 2;
+        padding-top: 5px;
+    }
+    .logout img{
+        float: right;
+    }
+    .notification{
+        top: 0;
+        position: fixed;
+        background: #000;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        height: 35px;
+    }
+    
+    .app{
+        width: 100%;
+        display: flex;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 481px){
+    .navBarDiv{
+        top: 0;
+    }
+}
